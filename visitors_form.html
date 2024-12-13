@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Visitor Registration Form</h2>
-    <form action="insert_visitors.php" method="POST">
+    <form action="https://formspree.io/f/xgvebbev" method="POST">
         <label for="serial_number">Serial Number:</label><br>
         <input type="text" id="serial_number" name="serial_number" required><br><br>
 
@@ -38,6 +38,8 @@
 
         <label for="signature">Signature:</label><br>
         <input type="text" id="signature" name="signature"><br><br>
+
+        <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
 
         <input type="submit" value="Submit">
     </form>
