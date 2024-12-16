@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Visitor Form</title>
+</head>
+<body>
+    <h1>Visitor Registration Form</h1>
+    <form method="POST" action="/submit">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="id_no">ID No:</label>
+        <input type="text" id="id_no" name="id_no" required><br>
+
+        <label for="phone">Phone No:</label>
+        <input type="text" id="phone" name="phone" required><br>
+
+        <label for="vehicle_reg_no">M/V Reg No:</label>
+        <input type="text" id="vehicle_reg_no" name="vehicle_reg_no" required><br>
+
+        <label for="visiting_office">Office:</label>
+        <input type="text" id="visiting_office" name="visiting_office" required><br>
+
+        <label for="time_in">Time In:</label>
+        <input type="time" id="time_in" name="time_in" required><br>
+
+        <label for="time_out">Time Out:</label>
+        <input type="time" id="time_out" name="time_out"><br>
+
+        <label for="officer_on_duty">Officer on Duty:</label>
+        <input type="text" id="officer_on_duty" name="officer_on_duty" required><br>
+
+        <label for="signature">Signature (optional):</label>
+        <input type="text" id="signature" name="signature"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
